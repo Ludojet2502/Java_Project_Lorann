@@ -1,6 +1,15 @@
 package controller;
 
-public class Impact {
+import java.sql.SQLException;
+import java.util.List;
+
+import model.Example;
+import model.ILorann;
+import model.IModel;
+
+
+
+public class Impact implements IModel, ILorann{
 	 public void checkImpact( Lorann lorann, Monster monster) {
 
 	    }
@@ -95,6 +104,24 @@ public class Impact {
 	    public void checkImpact( Monster monster, DoorOpen doorOpen) {
 
 	    }
+
+		@Override
+		public Example getExampleById(int id) throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public Example getExampleByName(String name) throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public List<Example> getAllExamples() throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 	
 }
