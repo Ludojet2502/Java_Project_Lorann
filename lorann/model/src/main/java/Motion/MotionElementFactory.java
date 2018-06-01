@@ -33,4 +33,11 @@ public abstract class MotionElementFactory {
         return MONSTER2;
     }
 
+    public Motion createMonster3() {
+        return MONSTER3;
+    }
+    
+    public Motion createMonster4() {
+        return MONSTER4;
+    }
 }
