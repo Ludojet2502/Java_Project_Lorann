@@ -1,6 +1,8 @@
 package Motion;
 
-public class Spell extends Motion{
+import model.ISpell;
+
+public class Spell extends Motion implements ISpell{
 	private static final char SPRITE = 'S';
 	
 	Spell(){

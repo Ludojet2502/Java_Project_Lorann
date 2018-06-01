@@ -4,104 +4,113 @@ import java.sql.SQLException;
 import java.util.List;
 
 import model.Example;
+import model.IDoorClosed;
+import model.IDoorOpened;
+import model.IEnergyBall;
+import model.IHBone;
 import model.ILorann;
 import model.IModel;
+import model.IMonster;
+import model.IOBone;
+import model.IPurse;
+import model.ISpell;
+import model.IVBone;
 
 
 
-public class Impact implements IModel, ILorann{
-	 public void checkImpact( Lorann lorann, Monster monster) {
+public class Impact implements IModel, ILorann, IMonster, ISpell, IHBone, IVBone, IOBone, IEnergyBall, IPurse, IDoorClosed, IDoorOpened{
+	 public void checkImpact( ILorann lorann, IMonster monster) {
 
-	    }
+        }
 
-	    public void checkImpact( Lorann lorann, Spell spell) {
-
-	    }
-
-	    public void checkImpact( Lorann lorann, HBone hBone) {
-
-	    }
-
-	    public void checkImpact( Lorann lorann, BVone vBone) {
+	    public void checkImpact( ILorann lorann, ISpell spell) {
 
 	    }
 
-	    public void checkImpact( Lorann lorann, OBone oBone) {
+	    public void checkImpact( ILorann lorann, IHBone hBone) {
 
 	    }
 
-	    public void checkImpact( Lorann lorann, EnergyBall energyBall) {
+	    public void checkImpact( ILorann lorann, IVBone vBone) {
 
 	    }
 
-	    public void checkImpact( Lorann lorann, Purse purse) {
+	    public void checkImpact( ILorann lorann, IOBone oBone) {
 
 	    }
 
-	    public void checkImpact( Lorann lorann, DoorClosed doorClosed) {
+	    public void checkImpact( ILorann lorann, IEnergyBall energyBall) {
 
 	    }
 
-	    public void checkImpact( Lorann lorann, DoorOpen doorOpen) {
+	    public void checkImpact( ILorann lorann, IPurse purse) {
 
 	    }
 
-	    public void checkImpact( Spell spell, Monster monster) {
+	    public void checkImpact( ILorann lorann, IDoorClosed doorClosed) {
 
 	    }
 
-	    public void checkImpact( Spell spell, HBone hBone) {
-
-	    }
-	    public void checkImpact( Spell spell, OBone oBone) {
+	    public void checkImpact( ILorann lorann, IDoorOpened doorOpened) {
 
 	    }
 
-	    public void checkImpact( Spell spell, VBone vBone) {
+	    public void checkImpact( ISpell spell, IMonster monster) {
 
 	    }
 
-	    public void checkImpact( Spell spell,  EnergyBall energyBall) {
+	    public void checkImpact( ISpell spell, IHBone hBone) {
+
+	    }
+	    public void checkImpact( ISpell spell, IOBone oBone) {
 
 	    }
 
-	    public void checkImpact( Spell spell, Purse purse) {
+	    public void checkImpact( ISpell spell, IVBone vBone) {
 
 	    }
 
-	    public void checkImpact( Spell spell, DoorClosed doorClosed) {
+	    public void checkImpact( ISpell spell,  IEnergyBall energyBall) {
 
 	    }
 
-	    public void checkImpact( Spell spell, DoorOpen doorOpen) {
+	    public void checkImpact( ISpell spell, IPurse purse) {
 
 	    }
 
-	    public void checkImpact( Monster monster, HBone hBone) {
+	    public void checkImpact( ISpell spell, IDoorClosed doorClosed) {
 
 	    }
 
-	    public void checkImpact( Monster monster, VBone vBone) {
+	    public void checkImpact( ISpell spell, IDoorOpened doorOpened) {
 
 	    }
 
-	    public void checkImpact( Monster monster, OBone oBone) {
+	    public void checkImpact( IMonster monster, IHBone hBone) {
 
 	    }
 
-	    public void checkImpact( Monster monster, EnergyBall energyBall) {
+	    public void checkImpact( IMonster monster, IVBone vBone) {
 
 	    }
 
-	    public void checkImpact( Monster monster, Purse purse) {
+	    public void checkImpact( IMonster monster, IOBone oBone) {
 
 	    }
 
-	    public void checkImpact( Monster monster, DoorClosed doorClosed) {
+	    public void checkImpact( IMonster monster, IEnergyBall energyBall) {
 
 	    }
 
-	    public void checkImpact( Monster monster, DoorOpen doorOpen) {
+	    public void checkImpact( IMonster monster, IPurse purse) {
+
+	    }
+
+	    public void checkImpact( IMonster monster, IDoorClosed doorClosed) {
+
+	    }
+
+	    public void checkImpact( IMonster monster, IDoorOpened doorOpened) {
 
 	    }
 

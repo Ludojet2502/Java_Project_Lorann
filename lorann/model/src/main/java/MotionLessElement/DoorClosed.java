@@ -1,6 +1,8 @@
 package MotionLessElement;
 
-public class DoorClosed extends Door {
+import model.IDoorClosed;
+
+public class DoorClosed extends Door implements IDoorClosed{
 	private static final char SPRITE = 'P';
 	
 	DoorClosed(){

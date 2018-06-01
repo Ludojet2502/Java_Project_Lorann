@@ -1,6 +1,8 @@
 package MotionLessElement;
 
-public class Purse extends Motionless{
+import model.IPurse;
+
+public class Purse extends Motionless implements IPurse{
 	private static final char SPRITE = 'A';
 	
 	Purse(){

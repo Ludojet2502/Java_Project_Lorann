@@ -1,6 +1,8 @@
 package MotionLessElement;
 
-public class DoorOpened extends Door {
+import model.IDoorOpened;
+
+public class DoorOpened extends Door implements IDoorOpened{
 	private static final char SPRITE = ' ';
 	
 	DoorOpened(){

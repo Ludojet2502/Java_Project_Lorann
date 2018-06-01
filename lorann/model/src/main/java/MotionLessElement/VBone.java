@@ -1,6 +1,8 @@
 package MotionLessElement;
 
-public class VBone extends Bone{
+import model.IVBone;
+
+public class VBone extends Bone implements IVBone{
 	private static final char SPRITE = 'V';
 	
 	VBone(){
