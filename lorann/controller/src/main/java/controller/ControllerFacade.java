@@ -13,7 +13,7 @@ import view.IView;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ControllerFacade implements IController {
+public class ControllerFacade implements IController, IModel, IView {
 
     /** The view. */
     private final IView  view;
@@ -72,4 +72,28 @@ public class ControllerFacade implements IController {
     public IModel getModel() {
         return this.model;
     }
+
+	@Override
+	public void displayMessage(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Example getExampleById(int id) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Example getExampleByName(String name) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Example> getAllExamples() throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
