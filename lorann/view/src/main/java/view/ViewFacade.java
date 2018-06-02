@@ -21,7 +21,7 @@ public class ViewFacade implements IView {
      */
     public ViewFacade() {
         super();
-        this.boardFrame = new BoardFrame("Lorann");
+        //this.boardFrame = new BoardFrame("Lorann");
     }
 
     /*

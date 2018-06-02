@@ -3,6 +3,7 @@ package model;
 import java.sql.SQLException;
 import java.util.List;
 
+import model.dao.CaseDAO;
 import model.dao.ExampleDAO;
 
 /**
@@ -47,5 +48,10 @@ public final class ModelFacade implements IModel {
     public List<Example> getAllExamples() throws SQLException {
         return ExampleDAO.getAllExamples();
     }
+
+	@Override
+	public List<Case> getAllCasesByID(int id) throws SQLException {
+		return CaseDAO.getAllCaseByID(id);
+	}
 
 }

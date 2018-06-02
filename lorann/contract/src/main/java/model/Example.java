@@ -19,13 +19,13 @@ public class Example {
      *
      * @param id
      *            the id
-     * @param name
+     * @param string
      *            the name
      */
-    public Example(final int id, final String name) {
+    public Example(final int id, final String string) {
         super();
         this.id = id;
-        this.name = name;
+        this.name = string;
     }
 
     /**

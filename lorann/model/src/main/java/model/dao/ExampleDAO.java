@@ -68,7 +68,6 @@ public abstract class ExampleDAO extends AbstractDAO {
     public static Example getExampleByName(final String name) throws SQLException {
         final CallableStatement callStatement = prepareCall(sqlExampleByName);
         Example example = null;
-
         callStatement.setString(1, name);
         if (callStatement.execute()) {
             final ResultSet result = callStatement.getResultSet();

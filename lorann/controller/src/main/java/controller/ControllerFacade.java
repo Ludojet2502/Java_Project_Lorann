@@ -3,6 +3,7 @@ package controller;
 import java.sql.SQLException;
 import java.util.List;
 
+import model.Case;
 import model.Example;
 import model.IModel;
 import view.IView;
@@ -13,7 +14,7 @@ import view.IView;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ControllerFacade implements IController, IModel, IView {
+public class ControllerFacade implements IController {
 
     /** The view. */
     private final IView  view;
@@ -42,14 +43,11 @@ public class ControllerFacade implements IController, IModel, IView {
      *             the SQL exception
      */
     public void start() throws SQLException {
-        this.getView().displayMessage(this.getModel().getExampleById(2).toString());
-
-        this.getView().displayMessage(this.getModel().getExampleByName("L").toString());
-
-        final List<Example> examples = this.getModel().getAllExamples();
+        
+        final List<Case> cases = this.getModel().getAllCasesByID(2);
         final StringBuilder message = new StringBuilder();
-        for (final Example example : examples) {
-            message.append(example);
+        for (final Case c : cases) {
+            message.append(c);
             message.append('\n');
         }
         this.getView().displayMessage(message.toString());
@@ -73,27 +71,5 @@ public class ControllerFacade implements IController, IModel, IView {
         return this.model;
     }
 
-	@Override
-	public void displayMessage(String message) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Example getExampleById(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Example getExampleByName(String name) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Example> getAllExamples() throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }

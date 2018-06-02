@@ -3,6 +3,7 @@ package controller;
 import java.sql.SQLException;
 import java.util.List;
 
+import model.Case;
 import model.Example;
 import model.IDoorClosed;
 import model.IDoorOpened;
@@ -239,6 +240,12 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 		@Override
 		public List<Example> getAllExamples() throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public List<Case> getAllCasesByID(int id) throws SQLException {
 			// TODO Auto-generated method stub
 			return null;
 		}
