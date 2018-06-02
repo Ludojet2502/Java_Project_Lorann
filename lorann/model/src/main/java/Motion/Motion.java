@@ -27,7 +27,7 @@ public abstract class Motion extends Element{
     }
 
     public void moveRight() {
-
+    	
     }
 
     public void moveUp() {
