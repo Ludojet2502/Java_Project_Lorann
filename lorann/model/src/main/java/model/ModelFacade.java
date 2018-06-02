@@ -29,6 +29,7 @@ public final class ModelFacade implements IModel {
         return ExampleDAO.getExampleById(id);
     }
 
+	
     /*
      * (non-Javadoc)
      * @see model.IModel#getExampleByName(java.lang.String)
