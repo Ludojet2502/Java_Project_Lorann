@@ -102,6 +102,9 @@ public class BoardFrame extends JFrame implements IBoard {
         this.getBoardPanel().addPawn(pawn);
     }
 
+    public void removePawns() {
+    	this.getBoardPanel().removePawns();
+    }
     /*
      * (non-Javadoc)
      * @see fr.exia.showboard.IBoard#getObserver()
@@ -193,4 +196,9 @@ public class BoardFrame extends JFrame implements IBoard {
     public final void setHeightLooped(final Boolean heightLooped) {
         this.getBoardPanel().setHeightLooped(heightLooped);
     }
+
+	public void removePawn(IPawn pawn) {
+		this.getBoardPanel().removePawn(pawn);
+		
+	}
 }
