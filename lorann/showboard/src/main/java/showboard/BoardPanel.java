@@ -7,6 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -109,7 +110,7 @@ class BoardPanel extends JPanel implements Observer {
         for (int x = this.getCornerMinX(); x <= this.getCornerMaxX(); x++) {
             for (int y = this.getCornerMinY(); y <= this.getCornerMaxY(); y++) {
                 this.drawSquareXY(graphics, x, y);
-                this.drawPawnsXY(graphics, mapPawn, x, y);
+                 this.drawPawnsXY(graphics, mapPawn, x, y);
             }
         }
     }
