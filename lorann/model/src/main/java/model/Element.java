@@ -17,6 +17,8 @@ public class Element {
     private void setSprite (char sprite) {
         this.sprite=sprite;
     }
+    
+    
 
    
 

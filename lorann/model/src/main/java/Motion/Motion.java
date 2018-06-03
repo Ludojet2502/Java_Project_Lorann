@@ -3,9 +3,12 @@ package Motion;
 import model.Element;
 
 public abstract class Motion extends Element{
-    public Motion(char sprite) {
+    
+    
+	public Motion(char sprite) {
         super(sprite);
-        // TODO Auto-generated constructor stub
+        
+        
     }
 
     private boolean alive = true;
@@ -29,7 +32,7 @@ public abstract class Motion extends Element{
     }
 
     public void moveRight() {
-    	setY(position.)
+    	
     }
 
     public void moveUp() {
