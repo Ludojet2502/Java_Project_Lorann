@@ -4,14 +4,32 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public abstract class Action implements KeyListener{
+	
+	public boolean UP = false;
+	public boolean RIGHT = false;
+	public boolean LEFT = false;
+	public boolean DOWN = false;
+	public boolean SPACE  = false;
+	
     public void isKeyPressed( KeyEvent e) {
         int keyCode = e.getKeyCode();
-        switch(keyCode) {
-        case KeyEvent.VK_UP : System.out.println("Touche UP");
-        case KeyEvent.VK_DOWN : System.out.println("Touche BAS");
-        case KeyEvent.VK_LEFT : System.out.println("Touche GAUCHE");
-        case KeyEvent.VK_RIGHT : System.out.println("Touche DROIT");
-        }
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT)  { 
+			RIGHT = true;
+			
+        }else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+			LEFT = true;
+		
+		}else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+			DOWN = true;
+			
+		}else if(e.getKeyCode() == KeyEvent.VK_UP) {
+			UP = true;
+		}
+		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+			SPACE = true;
+			// code pour lancer la boule
+			
+		}
     }
 
     public void KeyTyped(KeyEvent e) {
