@@ -37,7 +37,24 @@ public abstract class Action implements KeyListener{
     }
 
     public void KeyReleased(KeyEvent e) {
-
+    	int keyCode = e.getKeyCode();
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT)  { 
+			RIGHT = false;
+			
+        }else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+			LEFT = false;
+		
+		}else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+			DOWN = false;
+			
+		}else if(e.getKeyCode() == KeyEvent.VK_UP) {
+			UP = false;
+		}
+		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+			SPACE = false;
+			// code pour lancer la boule
+			
+		}
     }
 
 }
