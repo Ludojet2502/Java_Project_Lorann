@@ -1,6 +1,6 @@
 package model;
 
-public class Element {
+public class Element implements IElement{
 
     private char sprite;
 
