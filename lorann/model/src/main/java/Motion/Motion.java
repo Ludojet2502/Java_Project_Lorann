@@ -9,29 +9,31 @@ public abstract class Motion extends Element{
     }
 
     private boolean alive = true;
+	private int getX;
+	private int getY;
 
     public int getX() {
-        return this.getX();
+        return getX;
     }
 
-    public void setX( int x) {
-
+    public void setX( int getX) {
+    	this.getX = getX;
     }
 
     public int getY() {
-        return this.getY();
+        return getY;
     }
 
-    public void setY() {
-
+    public void setY(int getY) {
+    	this.getY = getY;
     }
 
     public void moveRight() {
-    	
+    	setY(position.)
     }
 
     public void moveUp() {
-
+    	
     }
 
     public void moveDown() {
