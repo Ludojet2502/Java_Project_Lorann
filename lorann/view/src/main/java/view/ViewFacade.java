@@ -69,7 +69,7 @@ public class ViewFacade implements IView {
     		}
     	}
     	
-    	boardFrame.addKeyListener((KeyListener)Action);
+    	boardFrame.addKeyListener((KeyListener) Action);
     	this.model.addObserver(this.boardFrame.getObserver());
     	boardFrame.setFocusable(true);
     	boardFrame.requestFocus();
