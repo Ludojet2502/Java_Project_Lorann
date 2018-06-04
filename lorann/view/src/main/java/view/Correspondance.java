@@ -22,7 +22,6 @@ public class Correspondance {
 	
 	protected void DoCorrespondance(Graphics g) {
 		
-		
 		for (int i = 0; i<= 19; i++) {
         	for (int j = 0; j<= 11; j++) {
         		try {
