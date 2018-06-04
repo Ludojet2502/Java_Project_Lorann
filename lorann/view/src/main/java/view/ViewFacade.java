@@ -17,6 +17,8 @@ import model.IModel;
 import java.util.Observable;
 import java.util.Observer;
 
+import controller.IController;
+
 /**
  * 
  * <h1>The Class ViewFacade provides a facade of the View component.</h1>
@@ -29,6 +31,7 @@ public class ViewFacade implements IView, Runnable {
         private BoardFrame boardFrame;
 		private IModel model;
 		private Rectangle view;
+		private IController Action;
 
 
     /**
