@@ -22,7 +22,7 @@ public class Level extends Observable implements ILevel  {
 		if ( x>=0 && x <20 && y>=0 && y < 12) {
 			return level[y][x];
 		}
-		return new Element ("../sprite/empty.png");
+		return new Element ('L');
 	}
 	
 	public void setOnLevel (IElement element, int x, int y) {

@@ -27,7 +27,7 @@ import java.util.Observer;
 public class ViewFacade implements IView, Runnable {
 
         private BoardFrame boardFrame;
-		private Object model;
+		private IModel model;
 		private Rectangle view;
 
 

@@ -2,6 +2,9 @@ package model;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Observer;
+
+import showboard.ISquare;
 
 /**
  * <h1>The Interface IModel.</h1>
@@ -43,4 +46,8 @@ public interface IModel {
     List<Example> getAllExamples() throws SQLException;
     
     List<Case> getAllCasesByID(int id) throws SQLException;
+
+	ISquare getOnLevel(int x, int y);
+	
+	public void addObserver (Observer observer);
 }
