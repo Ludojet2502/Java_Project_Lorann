@@ -10,16 +10,28 @@ import javax.imageio.ImageIO;
 
 import model.IElement;
 
+/**
+ * 
+ * @author piers
+ *
+ */
 public class Correspondance {
 	
 	Element[][] mapNiveau;
 	java.awt.Image Image;
 	BufferedImage image = null;
 	
+	/**
+	 * 
+	 */
 	public Correspondance() {
 		this.mapNiveau = mapNiveau;
 	}
 	
+	/**
+	 * 
+	 * @param g
+	 */
 	protected void DoCorrespondance(Graphics g) {
 		
 		for (int i = 0; i<= 19; i++) {

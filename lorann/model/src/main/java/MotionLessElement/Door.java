@@ -5,6 +5,10 @@ public class Door extends Motionless{
 		super(sprite);
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	private boolean state() {
 		return this.state();
 	}

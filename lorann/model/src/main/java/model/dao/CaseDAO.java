@@ -39,14 +39,12 @@ public abstract class CaseDAO extends AbstractDAO {
 
     
     /**
-     * Gets the all examples.
-     *
-     * @return the all examples
+     * Gets the all cases
+     * 
+     * @param id
+     * @return the all cases
      * @throws SQLException
-     *             the SQL exception
      */
-    
-    
     public static List<Case> getAllCaseByID(final int id) throws SQLException {
         final ArrayList<Case> cases = new ArrayList<Case>();
         final CallableStatement callStatement = prepareCall(sqlAllCases);

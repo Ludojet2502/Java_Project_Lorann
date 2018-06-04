@@ -11,6 +11,10 @@ public abstract class Action implements KeyListener{
 	public boolean DOWN = false;
 	public boolean SPACE  = false;
 	
+	/**
+	 * 
+	 * @param e
+	 */
     public void isKeyPressed( KeyEvent e) {
         int keyCode = e.getKeyCode();
         if(e.getKeyCode() == KeyEvent.VK_RIGHT)  { 
@@ -32,10 +36,18 @@ public abstract class Action implements KeyListener{
 		}
     }
 
+    /**
+     * 
+     * @param e
+     */
     public void KeyTyped(KeyEvent e) {
 
     }
 
+    /**
+     * 
+     * @param e
+     */
     public void KeyReleased(KeyEvent e) {
     	int keyCode = e.getKeyCode();
         if(e.getKeyCode() == KeyEvent.VK_RIGHT)  { 
