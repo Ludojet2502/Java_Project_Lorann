@@ -57,7 +57,9 @@ public class ViewFacade implements IView {
     }
     
     
-    
+    /**
+     * 
+     */
     public final void run() {
     	boardFrame.setDimension(new Dimension(20,12));
     	boardFrame.setDisplayFrame(this.view);
