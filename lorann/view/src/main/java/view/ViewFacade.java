@@ -39,7 +39,7 @@ public class ViewFacade implements IView, Runnable {
      */
     public ViewFacade() {
         super();
-        this.boardFrame = new BoardFrame("Lorann");
+        this.boardFrame = new BoardFrame("Jeu du Lorann");
     }
 
     /*
