@@ -10,7 +10,7 @@ import showboard.BoardFrame;
 import showboard.IPawn;
 import showboard.ISquare;
 
-
+import model.ILevel;
 
 
 
