@@ -67,7 +67,7 @@ public class ViewFacade implements IView {
     	
     	for (int y = 0; y < 384; y++) {
     		for (int x = 0; x < 640; x++) {
-    			boardFrame.addSquare((ISquare) this.model.getOnMap(x,y),x,y);
+    			boardFrame.addSquare((ISquare) this.model.getOnLevel(x,y),x,y);
     		}
     	}
     	
