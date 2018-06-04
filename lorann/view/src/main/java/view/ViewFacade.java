@@ -5,22 +5,26 @@ import java.awt.Rectangle;
 import java.awt.event.KeyListener;
 
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 import showboard.BoardFrame;
 import showboard.IPawn;
 import showboard.ISquare;
 
 import model.ILevel;
+import model.IModel;
 
-
+import java.util.Observable;
+import java.util.Observer;
 
 /**
+ * 
  * <h1>The Class ViewFacade provides a facade of the View component.</h1>
  *
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ViewFacade implements IView {
+public class ViewFacade implements IView, Runnable {
 
         private BoardFrame boardFrame;
 		private Object model;
