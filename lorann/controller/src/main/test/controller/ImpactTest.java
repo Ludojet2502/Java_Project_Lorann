@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Observer;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -27,6 +28,7 @@ import model.IOBone;
 import model.IPurse;
 import model.ISpell;
 import model.IVBone;
+import showboard.ISquare;
 
 public class ImpactTest implements IModel, ILorann, IMonster1, IMonster2, IMonster3, IMonster4, ISpell, IHBone, IVBone, IOBone, IEnergyBall, IPurse, IDoorClosed, IDoorOpened{
 	private ILorann lorann;
@@ -422,6 +424,18 @@ public class ImpactTest implements IModel, ILorann, IMonster1, IMonster2, IMonst
 	public List<Case> getAllCasesByID(int id) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public ISquare getOnLevel(int x, int y) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addObserver(Observer observer) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
