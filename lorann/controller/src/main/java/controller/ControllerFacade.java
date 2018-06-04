@@ -5,6 +5,7 @@ import java.util.List;
 
 import model.Case;
 import model.Example;
+import model.IElement;
 import model.IModel;
 import view.IView;
 
@@ -21,7 +22,11 @@ public class ControllerFacade implements IController {
 
     /** The model. */
     private final IModel model;
+    
+    private IElement[][] level;
 
+	private ViewFacade viewFacade;
+    
     /**
      * Instantiates a new controller facade.
      *
@@ -50,10 +55,25 @@ public class ControllerFacade implements IController {
             message.append(c);
             message.append('\n');
         }
-        this.getView().displayMessage(message.toString());
+        System.out.println(message.toString());
+        
+        this.getModel().CreateLevel(cases);
+        
+        this.getView().displayMap(this.getModel().getLevel());
+        
+        this.level = this.getModel().getLevel();
+        
+        this.setViewFacade(new ViewFacade());
+       
+        
     }
 
-    /**
+    private void setViewFacade(ViewFacade viewFacade) {
+    	this.viewFacade = viewFacade;
+		
+	}
+
+	/**
      * Gets the view.
      *
      * @return the view
@@ -70,6 +90,11 @@ public class ControllerFacade implements IController {
     public IModel getModel() {
         return this.model;
     }
+    
+    /**
+    public void setViewFacade(ViewFacade viewFacade) {
+		this.viewFacade = viewFacade;
+	}*/
 
 	
 }

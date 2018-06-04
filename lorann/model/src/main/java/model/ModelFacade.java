@@ -2,9 +2,12 @@ package model;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Observer;
 
 import model.dao.CaseDAO;
 import model.dao.ExampleDAO;
+import showboard.ISquare;
+import model.*;
 
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
@@ -14,6 +17,8 @@ import model.dao.ExampleDAO;
  */
 public final class ModelFacade implements IModel {
 
+	
+	Level Niveau;
     /**
      * Instantiates a new model facade.
      */
@@ -57,5 +62,23 @@ public final class ModelFacade implements IModel {
 	public List<Case> getAllCasesByID(int id) throws SQLException {
 		return CaseDAO.getAllCaseByID(id);
 	}
+
+	public void CreateLevel(List<Case> cases) throws SQLException{
+		this.Niveau= new Level();
+		Niveau.CreateMap(cases);
+	}
+	
+	public IElement[][] getLevel(){
+		return Niveau.getLevel();
+	}
+	
+	public void setLevel(IElement[][] level) {
+		Niveau.setLevel(level);
+	}
+	
+	public char getIElement( int x, int y) {
+		return Niveau.getIElement(x, y);
+	}
+	
 
 }

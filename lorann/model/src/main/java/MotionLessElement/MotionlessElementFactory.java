@@ -1,18 +1,22 @@
 package MotionLessElement;
+
+import model.Location;
+
 /**
  * 
  * @author piers
  *
  */
-public abstract class MotionlessElementFactory {
+public class MotionlessElementFactory {
 
-    private static final EnergyBall ENERGYBALL = new EnergyBall();
-    private static final Purse PURSE = new Purse();
-    private static final HBone HBONE = new HBone();
-    private static final VBone VBONE = new VBone();
-    private static final OBone OBONE  = new OBone();
-    private static final DoorOpened DOOROPENED = new DoorOpened();
-    private static final DoorClosed DOORCLOSED = new DoorClosed();
+    private static Motionless Motionless = null;
+	private static EnergyBall ENERGYBALL = new EnergyBall();
+    private static Purse PURSE = new Purse();
+    private static HBone HBONE = new HBone();
+    private static VBone VBONE = new VBone();
+    private static OBone OBONE  = new OBone();
+    private static DoorOpened DOOROPENED = new DoorOpened();
+    private static DoorClosed DOORCLOSED = new DoorClosed();
 
     /**
      * 
@@ -31,56 +35,84 @@ public abstract class MotionlessElementFactory {
      * 
      * @return
      */
-    public Motionless createEnergyBall() {
-        return ENERGYBALL;
+    public Motionless createEnergyBall(char sprite, Location position) {
+        switch(sprite) {
+        case 'B' :
+        	ENERGYBALL = new EnergyBall();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless createPurse() {
-        return PURSE;
+    public Motionless createPurse(char sprite, Location position) {
+    	switch(sprite) {
+        case 'A' :
+        	PURSE = new Purse();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless createOBone() {
-        return OBONE;
+    public Motionless createOBone(char sprite, Location position) {
+    	switch(sprite) {
+        case 'R' :
+        	OBONE = new OBone();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless createHBone() {
-        return HBONE;
+    public Motionless createHBone(char sprite, Location position) {
+    	switch(sprite) {
+        case 'H' :
+        	HBONE = new HBone();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless createVBone() {
-        return VBONE;
+    public Motionless createVBone(char sprite, Location position) {
+    	switch(sprite) {
+        case 'V' :
+        	VBONE = new VBone();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless DoorOpened() {
-        return DOOROPENED;
+    public Motionless createDoorOpened(char sprite, Location position) {
+    	switch(sprite) {
+        case 'P' :
+        	DOOROPENED = new DoorOpened();
+        }
+		return Motionless;
     }
 
     /**
      * 
      * @return
      */
-    public Motionless DoorClosed() {
-        return DOORCLOSED;
+    public Motionless createDoorClosed(char sprite, Location position) {
+    	switch(sprite) {
+        case 'P' :
+        	DOORCLOSED = new DoorClosed();
+        }
+		return Motionless;
     }
 
 

@@ -4,20 +4,17 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.KeyListener;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 
+import controller.IController;
+import model.IElement;
+import model.IModel;
 import showboard.BoardFrame;
 import showboard.IPawn;
 import showboard.ISquare;
-
-import model.ILevel;
-import model.IModel;
-
-import java.util.Observable;
-import java.util.Observer;
-
-import controller.IController;
+import model.*;
 
 /**
  * 
@@ -26,11 +23,14 @@ import controller.IController;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ViewFacade implements IView, Runnable {
+public class ViewFacade implements IView {
 
         private BoardFrame boardFrame;
+        
 		private IModel model;
+		
 		private Rectangle view;
+		
 		private IController Action;
 
 
@@ -40,7 +40,23 @@ public class ViewFacade implements IView, Runnable {
     public ViewFacade() {
         super();
         this.boardFrame = new BoardFrame("Jeu du Lorann");
+        
     }
+    /**
+    public void setMap(IElement[][] level) {
+    	this.boardFrame.setLevel(level);
+    }*/
+    
+    public void displayMap(IElement[][] level) {
+		for (int i = 0; i <= 11; i++) {
+			for (int j = 0; j <= 19; j++) {
+				System.out.print(level[j][i].getSprite());
+			}
+			System.out.println();
+		}
+	}
+    
+    
 
     /*
      * (non-Javadoc)
@@ -73,11 +89,13 @@ public class ViewFacade implements IView, Runnable {
     public void addPawn(IPawn pawn) {
     	this.boardFrame.addPawn(pawn);
     }
-    
+	
+  
     
     /**
      * 
      */
+    /**
     public final void run() {
     	boardFrame.setDimension(new Dimension(20,12));
     	boardFrame.setDisplayFrame(this.view);
@@ -95,7 +113,7 @@ public class ViewFacade implements IView, Runnable {
     	boardFrame.requestFocus();
     	boardFrame.setVisible(true);
    	
-    }
+    }*/
     
 
 }

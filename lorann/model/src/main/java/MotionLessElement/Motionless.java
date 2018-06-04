@@ -1,6 +1,7 @@
 package MotionLessElement;
 
 import model.Element;
+import model.Location;
 
 /**
  * 
@@ -8,7 +9,7 @@ import model.Element;
  *
  */
 public abstract class Motionless extends Element {
-	Motionless(final char sprite){
+	Motionless(char sprite){
 		super(sprite);
 	}
 }

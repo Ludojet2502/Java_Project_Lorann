@@ -478,51 +478,6 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    
-	    /**
-	     * 
-	     */
-		@Override
-		public Example getExampleById(int id) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
-		/**
-		 * 
-		 */
-		@Override
-		public Example getExampleByName(String name) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
-		/**
-		 * 
-		 */
-		@Override
-		public List<Example> getAllExamples() throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
-		/**
-		 * 
-		 */
-		@Override
-		public List<Case> getAllCasesByID(int id) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public ISquare getOnLevel(int x, int y) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public void addObserver(Observer observer) {
-			// TODO Auto-generated method stub
-			
-		}
-
+	  
 	
 }

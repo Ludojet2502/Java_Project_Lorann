@@ -46,8 +46,10 @@ public interface IModel {
     List<Example> getAllExamples() throws SQLException;
     
     List<Case> getAllCasesByID(int id) throws SQLException;
+    
+    void CreateLevel(List<Case> cases) throws SQLException;
+    
+    IElement[][] getLevel();
 
-	ISquare getOnLevel(int x, int y);
 	
-	public void addObserver (Observer observer);
 }

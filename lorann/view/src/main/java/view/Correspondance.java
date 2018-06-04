@@ -1,7 +1,9 @@
 package view;
 
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -15,30 +17,35 @@ import model.IElement;
  * @author piers
  *
  */
-public class Correspondance {
+public class Correspondance implements ImageObserver {
 	
-	Element[][] mapNiveau;
-	java.awt.Image Image;
+	IElement[][] level;
+	Image Image;
 	BufferedImage image = null;
 	
 	/**
 	 * 
 	 */
 	public Correspondance() {
-		this.mapNiveau = mapNiveau;
+		this.level = level;
+	}
+	
+	public void setLevel(IElement[][] level) {
+		this.level = level;
 	}
 	
 	/**
 	 * 
 	 * @param g
 	 */
-	protected void DoCorrespondance(Graphics g) {
+	protected void paintComponent(Graphics g) {
+		
 		
 		for (int i = 0; i<= 19; i++) {
         	for (int j = 0; j<= 11; j++) {
         		try {
-        			switch(this.mapNiveau[i][j].getSprite()) {
-        			case 'S':
+        			switch(this.level[i][j].getSprite()) {
+        			case 'R':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/bone.png").toURI()));
         				break;
         			case 'H':
@@ -47,38 +54,35 @@ public class Correspondance {
         			case 'V':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/vertical_bone.png").toURI()));
         				break;
-        			case 'X':
-        				image = ImageIO.read(new File(getClass().getResource("/Sprites/ground.png").toURI()));
+        			case 'O':
+        				image = ImageIO.read(new File(getClass().getResource("/Sprites/Empty.png").toURI()));
         				break;
         			case 'L':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/lorann_u.png").toURI()));
         				break;
-        			case 'G':
+        			case 'A':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/purse.png").toURI()));
         				break;
-        			case 'E':
+        			case 'B':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/crystal_ball.png").toURI()));
         				break;
-        			case 'P':
+        			case 'F':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/fireball_1.png").toURI()));
         				break;
-        			case 'F':
+        			case 'W':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/monster_1.png").toURI()));
         				break;
-        			case 'K':
+        			case 'X':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/monster_2.png").toURI()));
         				break;
-        			case 'B':
+        			case 'Y':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/monster_3.png").toURI()));
         				break;
-        			case 'J':
+        			case 'Z':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/monster_4.png").toURI()));
         				break;
-        			case 'C':
+        			case 'P':
         				image = ImageIO.read(new File(getClass().getResource("/Sprites/gate_closed.png").toURI()));
-        				break;
-        			case 'O':
-        				image = ImageIO.read(new File(getClass().getResource("/Sprites/gate_open.png").toURI()));
         				break;
         			}
         			g.drawImage(image, i*32, j*32, this);
@@ -87,5 +91,11 @@ public class Correspondance {
         		}
         	}
         }
+	}
+
+	@Override
+	public boolean imageUpdate(java.awt.Image img, int infoflags, int x, int y, int width, int height) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

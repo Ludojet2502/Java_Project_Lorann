@@ -6,6 +6,8 @@ import java.util.Observer;
 
 import javax.swing.JFrame;
 
+
+
 /**
  * <h1>The Class BoardFrame.</h1>
  * <p>
@@ -202,4 +204,6 @@ public class BoardFrame extends JFrame implements IBoard {
 		this.getBoardPanel().removePawn(pawn);
 		
 	}
+
+	
 }
