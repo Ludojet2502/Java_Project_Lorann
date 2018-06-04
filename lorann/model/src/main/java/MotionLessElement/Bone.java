@@ -5,6 +5,9 @@ public class Bone extends Motionless{
 		super(sprite);
 	}
 	
+	/**
+	 * 
+	 */
 	public void position() {
 		
 	}

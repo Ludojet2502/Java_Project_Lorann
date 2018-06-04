@@ -57,15 +57,27 @@ public class Case {
     public int getId_map() {
         return this.id_map;
     }
+    /**
+     * 
+     * @return
+     */
 
     public int getX() {
         return this.X;
     }
     
+    /**
+     * 
+     * @return
+     */
     public int getY() {
         return this.Y;
     }
     
+    /**
+     * 
+     * @return
+     */
     public char getSprite() {
         return this.sprite;
     }

@@ -44,14 +44,25 @@ public class ViewFacade implements IView {
         JOptionPane.showMessageDialog(null, message);
     }
     
+    /**
+     * 
+     */
     public void removePawns() {
     	this.boardFrame.removePawns();
     }
     
+    /**
+     * 
+     * @param pawn
+     */
     public void removePawn(IPawn pawn) {
     	this.boardFrame.removePawn(pawn);
     }
     
+    /**
+     * 
+     * @param pawn
+     */
     public void addPawn(IPawn pawn) {
     	this.boardFrame.addPawn(pawn);
     }

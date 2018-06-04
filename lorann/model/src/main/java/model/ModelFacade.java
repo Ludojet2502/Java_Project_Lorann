@@ -49,6 +49,10 @@ public final class ModelFacade implements IModel {
         return ExampleDAO.getAllExamples();
     }
 
+    /*
+     * (non-Javadoc)
+     * @see model.IModel#getAllCasesByID(int)
+     */
 	@Override
 	public List<Case> getAllCasesByID(int id) throws SQLException {
 		return CaseDAO.getAllCaseByID(id);

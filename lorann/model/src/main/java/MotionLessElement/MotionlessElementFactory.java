@@ -1,5 +1,9 @@
 package MotionLessElement;
-
+/**
+ * 
+ * @author piers
+ *
+ */
 public abstract class MotionlessElementFactory {
 
     private static final EnergyBall ENERGYBALL = new EnergyBall();
@@ -10,7 +14,9 @@ public abstract class MotionlessElementFactory {
     private static final DoorOpened DOOROPENED = new DoorOpened();
     private static final DoorClosed DOORCLOSED = new DoorClosed();
 
-
+    /**
+     * 
+     */
     private static Motionless[] motionlessElement = {
             ENERGYBALL,
             PURSE,
@@ -21,30 +27,58 @@ public abstract class MotionlessElementFactory {
             DOORCLOSED,
     };
 
+    /**
+     * 
+     * @return
+     */
     public Motionless createEnergyBall() {
         return ENERGYBALL;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless createPurse() {
         return PURSE;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless createOBone() {
         return OBONE;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless createHBone() {
         return HBONE;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless createVBone() {
         return VBONE;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless DoorOpened() {
         return DOOROPENED;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motionless DoorClosed() {
         return DOORCLOSED;
     }

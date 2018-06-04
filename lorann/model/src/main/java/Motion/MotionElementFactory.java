@@ -8,6 +8,9 @@ public abstract class MotionElementFactory {
     private static final Monster3 MONSTER3 = new Monster3();
     private static final Monster4 MONSTER4 = new Monster4();
     
+    /**
+     * 
+     */
     private static Motion[] motionElement = {
             LORANN,
             SPELL,
@@ -17,26 +20,50 @@ public abstract class MotionElementFactory {
             MONSTER4,
     };
 
+    /**
+     * 
+     * @return
+     */
     public Motion createLorann() {
         return LORANN;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motion createSpell() {
         return SPELL;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motion createMonster1() {
         return MONSTER1;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motion createMonster2() {
         return MONSTER2;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Motion createMonster3() {
         return MONSTER3;
     }
     
+    /**
+     * 
+     * @return
+     */
     public Motion createMonster4() {
         return MONSTER4;
     }
