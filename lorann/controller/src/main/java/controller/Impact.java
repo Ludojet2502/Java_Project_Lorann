@@ -29,7 +29,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	 * @param lorann
 	 * @param monster
 	 */
-		public void checkImpact( ILorann lorann, IMonster1 monster) {
+		public void checkImpact( ILorann lorann, IMonster1 monster1) {
 			lorann = null;
         }
 	 	/**
@@ -37,7 +37,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	 	 * @param lorann
 	 	 * @param monster
 	 	 */
-	 	public void checkImpact( ILorann lorann, IMonster2 monster) {
+	 	public void checkImpact( ILorann lorann, IMonster2 monster2) {
 			lorann = null;
         }
 	 	/**
@@ -45,7 +45,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	 	 * @param lorann
 	 	 * @param monster
 	 	 */
-	 	public void checkImpact( ILorann lorann, IMonster3 monster) {
+	 	public void checkImpact( ILorann lorann, IMonster3 monster3) {
 			lorann = null;
         }
 	 	/**
@@ -53,7 +53,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	 	 * @param lorann
 	 	 * @param monster
 	 	 */
-	 	public void checkImpact( ILorann lorann, IMonster4 monster) {
+	 	public void checkImpact( ILorann lorann, IMonster4 monster4) {
 			lorann = null;
         }
 	 	/**
@@ -128,8 +128,9 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param spell
 	     * @param monster
 	     */
-	    public void checkImpact( ISpell spell, IMonster1 monster) {
-			monster = null;
+	    public void checkImpact( ISpell spell, IMonster1 monster1) {
+			monster1 = null;
+			spell = null;
 	    }
 	    
 	    /**
@@ -137,8 +138,9 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param spell
 	     * @param monster
 	     */
-	    public void checkImpact( ISpell spell, IMonster2 monster) {
-			monster = null;
+	    public void checkImpact( ISpell spell, IMonster2 monster2) {
+			monster2 = null;
+			spell = null;
 	    }
 	    
 	    /**
@@ -146,8 +148,9 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param spell
 	     * @param monster
 	     */
-	    public void checkImpact( ISpell spell, IMonster3 monster) {
-			monster = null;
+	    public void checkImpact( ISpell spell, IMonster3 monster3) {
+			monster3 = null;
+			spell = null;
 	    }
 	    
 	    /**
@@ -155,8 +158,9 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param spell
 	     * @param monster
 	     */
-	    public void checkImpact( ISpell spell, IMonster4 monster) {
-			monster = null;
+	    public void checkImpact( ISpell spell, IMonster4 monster4) {
+			monster4 = null;
+			spell = null;
 	    }
 
 	    /**
@@ -227,7 +231,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param hBone
 	     */
-	    public void checkImpact( IMonster1 monster, IHBone hBone) {
+	    public void checkImpact( IMonster1 monster1, IHBone hBone) {
 
 	    }
 	    
@@ -236,7 +240,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param hBone
 	     */
-	    public void checkImpact( IMonster2 monster, IHBone hBone) {
+	    public void checkImpact( IMonster2 monster2, IHBone hBone) {
 
 	    }
 	    /**
@@ -244,7 +248,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param hBone
 	     */
-	    public void checkImpact( IMonster3 monster, IHBone hBone) {
+	    public void checkImpact( IMonster3 monster3, IHBone hBone) {
 
 	    }
 	    /**
@@ -252,7 +256,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param hBone
 	     */
-	    public void checkImpact( IMonster4 monster, IHBone hBone) {
+	    public void checkImpact( IMonster4 monster4, IHBone hBone) {
 
 	    }
 
@@ -261,16 +265,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param vBone
 	     */
-	    public void checkImpact( IMonster1 monster, IVBone vBone) {
-
-	    }
-	    
-	    /**
-	     * 
-	     * @param monster
-	     * @param vBone
-	     */
-	    public void checkImpact( IMonster2 monster, IVBone vBone) {
+	    public void checkImpact( IMonster1 monster1, IVBone vBone) {
 
 	    }
 	    
@@ -279,7 +274,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param vBone
 	     */
-	    public void checkImpact( IMonster3 monster, IVBone vBone) {
+	    public void checkImpact( IMonster2 monster2, IVBone vBone) {
 
 	    }
 	    
@@ -288,7 +283,16 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param vBone
 	     */
-	    public void checkImpact( IMonster4 monster, IVBone vBone) {
+	    public void checkImpact( IMonster3 monster3, IVBone vBone) {
+
+	    }
+	    
+	    /**
+	     * 
+	     * @param monster
+	     * @param vBone
+	     */
+	    public void checkImpact( IMonster4 monster4, IVBone vBone) {
 
 	    }
 
@@ -297,7 +301,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param oBone
 	     */
-	    public void checkImpact( IMonster1 monster, IOBone oBone) {
+	    public void checkImpact( IMonster1 monster1, IOBone oBone) {
 
 	    }
 	    
@@ -306,7 +310,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param oBone
 	     */
-	    public void checkImpact( IMonster2 monster, IOBone oBone) {
+	    public void checkImpact( IMonster2 monster2, IOBone oBone) {
 
 	    }
 	    
@@ -315,7 +319,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param oBone
 	     */
-	    public void checkImpact( IMonster3 monster, IOBone oBone) {
+	    public void checkImpact( IMonster3 monster3, IOBone oBone) {
 
 	    }
 	    
@@ -324,7 +328,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param oBone
 	     */
-	    public void checkImpact( IMonster4 monster, IOBone oBone) {
+	    public void checkImpact( IMonster4 monster4, IOBone oBone) {
 
 	    }
 
@@ -333,7 +337,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param energyBall
 	     */
-	    public void checkImpact( IMonster1 monster, IEnergyBall energyBall) {
+	    public void checkImpact( IMonster1 monster1, IEnergyBall energyBall) {
 
 	    }
 	    
@@ -342,7 +346,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param energyBall
 	     */
-	    public void checkImpact( IMonster2 monster, IEnergyBall energyBall) {
+	    public void checkImpact( IMonster2 monster2, IEnergyBall energyBall) {
 
 	    }
 	    
@@ -351,7 +355,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param energyBall
 	     */
-	    public void checkImpact( IMonster3 monster, IEnergyBall energyBall) {
+	    public void checkImpact( IMonster3 monster3, IEnergyBall energyBall) {
 
 	    }
 	    
@@ -360,7 +364,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param energyBall
 	     */
-	    public void checkImpact( IMonster4 monster, IEnergyBall energyBall) {
+	    public void checkImpact( IMonster4 monster4, IEnergyBall energyBall) {
 
 	    }
 
@@ -369,7 +373,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param purse
 	     */
-	    public void checkImpact( IMonster1 monster, IPurse purse) {
+	    public void checkImpact( IMonster1 monster1, IPurse purse) {
 
 	    }
 	    
@@ -378,7 +382,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param purse
 	     */
-	    public void checkImpact( IMonster2 monster, IPurse purse) {
+	    public void checkImpact( IMonster2 monster2, IPurse purse) {
 
 	    }
 	    
@@ -387,7 +391,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param purse
 	     */
-	    public void checkImpact( IMonster3 monster, IPurse purse) {
+	    public void checkImpact( IMonster3 monster3, IPurse purse) {
 
 	    }
 	    
@@ -396,7 +400,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param purse
 	     */
-	    public void checkImpact( IMonster4 monster, IPurse purse) {
+	    public void checkImpact( IMonster4 monster4, IPurse purse) {
 
 	    }
 
@@ -405,7 +409,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorClosed
 	     */
-	    public void checkImpact( IMonster1 monster, IDoorClosed doorClosed) {
+	    public void checkImpact( IMonster1 monster1, IDoorClosed doorClosed) {
 
 	    }
 	    
@@ -414,7 +418,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorClosed
 	     */
-	    public void checkImpact( IMonster2 monster, IDoorClosed doorClosed) {
+	    public void checkImpact( IMonster2 monster2, IDoorClosed doorClosed) {
 
 	    }
 	    
@@ -423,7 +427,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorClosed
 	     */
-	    public void checkImpact( IMonster3 monster, IDoorClosed doorClosed) {
+	    public void checkImpact( IMonster3 monster3, IDoorClosed doorClosed) {
 
 	    }
 	    
@@ -432,7 +436,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorClosed
 	     */
-	    public void checkImpact( IMonster4 monster, IDoorClosed doorClosed) {
+	    public void checkImpact( IMonster4 monster4, IDoorClosed doorClosed) {
 
 	    }
 
@@ -441,16 +445,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorOpened
 	     */
-	    public void checkImpact( IMonster1 monster, IDoorOpened doorOpened) {
-
-	    }
-	    
-	    /**
-	     * 
-	     * @param monster
-	     * @param doorOpened
-	     */
-	    public void checkImpact( IMonster2 monster, IDoorOpened doorOpened) {
+	    public void checkImpact( IMonster1 monster1, IDoorOpened doorOpened) {
 
 	    }
 	    
@@ -459,7 +454,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorOpened
 	     */
-	    public void checkImpact( IMonster3 monster, IDoorOpened doorOpened) {
+	    public void checkImpact( IMonster2 monster2, IDoorOpened doorOpened) {
 
 	    }
 	    
@@ -468,7 +463,16 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	     * @param monster
 	     * @param doorOpened
 	     */
-	    public void checkImpact( IMonster4 monster, IDoorOpened doorOpened) {
+	    public void checkImpact( IMonster3 monster3, IDoorOpened doorOpened) {
+
+	    }
+	    
+	    /**
+	     * 
+	     * @param monster
+	     * @param doorOpened
+	     */
+	    public void checkImpact( IMonster4 monster4, IDoorOpened doorOpened) {
 
 	    }
 	    
