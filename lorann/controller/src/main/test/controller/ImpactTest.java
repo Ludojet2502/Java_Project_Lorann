@@ -31,20 +31,6 @@ import model.IVBone;
 import showboard.ISquare;
 
 public class ImpactTest implements IModel, ILorann, IMonster1, IMonster2, IMonster3, IMonster4, ISpell, IHBone, IVBone, IOBone, IEnergyBall, IPurse, IDoorClosed, IDoorOpened{
-	private ILorann lorann;
-	private IMonster1 monster1;
-	private IMonster2 monster2;
-	private IMonster3 monster3;
-	private IMonster4 monster4;
-	private ISpell spell;
-	private IHBone hBone;
-	private IVBone vBone;
-	private IOBone oBone;
-	private IEnergyBall energyBall;
-	private IPurse purse;
-	private IDoorClosed doorClosed;
-	private IDoorOpened doorOpened;
-	
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -57,19 +43,6 @@ public class ImpactTest implements IModel, ILorann, IMonster1, IMonster2, IMonst
 
 	@Before
 	public void setUp() throws Exception {
-		lorann = new Lorann();
-		monster1 = new Monster1();
-		monster2 = new Monster2();
-		monster3 = new Monster3();
-		monster4 = new Monster4();
-		spell = new Spell();
-		hBone = new HBone();
-		vBone = new VBone();
-		oBone = new OBone();
-		energyBall = new EnergyBall();
-		purse = new Purse();
-		doorClosed = new DoorClosed();
-		doorOpened = new DoorOpened();
 	}
 
 	@After
