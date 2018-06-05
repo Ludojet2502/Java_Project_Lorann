@@ -8,6 +8,7 @@ import model.Case;
 import model.Example;
 import model.IDoorClosed;
 import model.IDoorOpened;
+import model.IElement;
 import model.IEnergyBall;
 import model.IHBone;
 import model.ILorann;
@@ -477,6 +478,36 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    public void checkImpact( IMonster4 monster4, IDoorOpened doorOpened) {
 
 	    }
+		@Override
+		public Example getExampleById(int id) throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public Example getExampleByName(String name) throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public List<Example> getAllExamples() throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public List<Case> getAllCasesByID(int id) throws SQLException {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public void CreateLevel(List<Case> cases) throws SQLException {
+			// TODO Auto-generated method stub
+			
+		}
+		@Override
+		public IElement[][] getLevel() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 	    
 	  
 	

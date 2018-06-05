@@ -16,6 +16,7 @@ import model.Case;
 import model.Example;
 import model.IDoorClosed;
 import model.IDoorOpened;
+import model.IElement;
 import model.IEnergyBall;
 import model.IHBone;
 import model.ILorann;
@@ -399,16 +400,17 @@ public class ImpactTest implements IModel, ILorann, IMonster1, IMonster2, IMonst
 		return null;
 	}
 
+
 	@Override
-	public ISquare getOnLevel(int x, int y) {
+	public void CreateLevel(List<Case> cases) throws SQLException {
 		// TODO Auto-generated method stub
-		return null;
+		
 	}
 
 	@Override
-	public void addObserver(Observer observer) {
+	public IElement[][] getLevel() {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }
