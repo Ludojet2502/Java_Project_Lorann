@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-import Motion.Lorann;
-import Motion.MotionElementFactory;
-import MotionLessElement.MotionlessElementFactory;
+import model.Lorann;
+import model.MotionElementFactory;
+import model.MotionlessElementFactory;
 
 
 public class Level extends Observable  {
