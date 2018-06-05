@@ -15,6 +15,7 @@ public class OBone extends Bone implements IOBone {
 	 */
 	OBone(){
 		super(SPRITE);
+		System.out.println("Création de l'objet OBone");
 	}
 
 }

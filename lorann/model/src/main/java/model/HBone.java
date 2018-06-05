@@ -15,6 +15,7 @@ public class HBone extends Bone implements IHBone{
 	 */
 	HBone(){
 		super(SPRITE);
+		System.out.println("Création de l'objet HBone");
 	}
 
 }

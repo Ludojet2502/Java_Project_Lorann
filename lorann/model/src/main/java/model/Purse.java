@@ -15,6 +15,7 @@ public class Purse extends Motionless implements IPurse{
 	 */
 	Purse(){
 		super(SPRITE);
+		System.out.println("Création de l'objet Purse");
 	}
 
 }

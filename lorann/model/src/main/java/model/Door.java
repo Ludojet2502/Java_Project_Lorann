@@ -6,8 +6,9 @@ package model;
  *
  */
 public class Door extends Motionless{
-	Door( char sprite){
+	Door(char sprite){
 		super(sprite);
+		System.out.println("Création de l'objet Door");
 	}
 	
 	/**

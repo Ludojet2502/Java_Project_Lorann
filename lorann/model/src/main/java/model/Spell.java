@@ -15,5 +15,6 @@ public class Spell extends Motion implements ISpell{
 	 */
 	Spell(){
 		super(SPRITE);
+		System.out.println("Création de l'objet Spell");
 	}
 }

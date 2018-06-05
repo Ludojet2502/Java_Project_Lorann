@@ -14,5 +14,6 @@ public class Monster3 extends Motion implements IMonster3 {
 	 */
 	Monster3(){
 		super(SPRITE);
+		System.out.println("Création de l'objet Monster3");
 	}
 }

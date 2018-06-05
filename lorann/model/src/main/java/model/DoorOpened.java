@@ -15,5 +15,6 @@ public class DoorOpened extends Door implements IDoorOpened{
 	 */
 	DoorOpened(){
 		super(SPRITE);
+		System.out.println("Création de l'objet DoorOpened");
 	}
 }

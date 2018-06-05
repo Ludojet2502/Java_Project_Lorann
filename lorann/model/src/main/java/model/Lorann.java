@@ -14,5 +14,6 @@ public class Lorann extends Motion implements ILorann {
 	 */
 	Lorann(){
 		super(SPRITE);
+		System.out.println("Création de l'objet Lorann");
 	}
 }
