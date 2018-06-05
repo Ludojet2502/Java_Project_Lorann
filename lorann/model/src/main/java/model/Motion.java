@@ -19,7 +19,7 @@ public abstract class Motion {
 	}
 	
 	/**
-	 * 
+	 * Boolean which set alive in "true"
 	 */
     private boolean alive = true;
     /**
