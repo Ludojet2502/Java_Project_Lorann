@@ -1,4 +1,4 @@
-package MotionLessElement;
+package model;
 
 import model.IVBone;
 

@@ -1,4 +1,4 @@
-package Motion;
+package model;
 
 public enum Direction {
 	UP,

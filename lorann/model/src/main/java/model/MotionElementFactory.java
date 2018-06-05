@@ -1,6 +1,5 @@
-package Motion;
+package model;
 
-import MotionLessElement.EnergyBall;
 import model.Location;
 
 public class MotionElementFactory {

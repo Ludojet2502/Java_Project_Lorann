@@ -1,4 +1,4 @@
-package MotionLessElement;
+package model;
 
 public class Bone extends Motionless{
 	Bone( char sprite){

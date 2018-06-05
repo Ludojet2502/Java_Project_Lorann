@@ -1,4 +1,4 @@
-package MotionLessElement;
+package model;
 
 public class Door extends Motionless{
 	Door( char sprite){

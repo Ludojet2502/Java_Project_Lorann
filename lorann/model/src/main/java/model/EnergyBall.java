@@ -1,4 +1,4 @@
-package MotionLessElement;
+package model;
 
 import model.IEnergyBall;
 import model.Location;
