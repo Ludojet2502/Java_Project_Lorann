@@ -14,9 +14,17 @@ public abstract class Motion extends Element{
         
     }
 	
-	
+	/**
+	 * 
+	 */
     private boolean alive = true;
+    /**
+     * 
+     */
 	private int getX;
+	/**
+	 * 
+	 */
 	private int getY;
 	
 	/**

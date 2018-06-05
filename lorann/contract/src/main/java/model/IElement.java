@@ -3,8 +3,8 @@ package model;
 public interface IElement {
 	
 	/**
-	 * 
-	 * @return
+	 * Gets the sprite
+	 *
 	 */
 	public char getSprite();
 	

@@ -19,8 +19,17 @@ import model.IElement;
  */
 public class Correspondance implements ImageObserver {
 	
+	/**
+	 * 
+	 */
 	IElement[][] level;
+	/**
+	 * 
+	 */
 	Image Image;
+	/**
+	 * 
+	 */
 	BufferedImage image = null;
 	
 	/**
@@ -30,6 +39,10 @@ public class Correspondance implements ImageObserver {
 		this.level = level;
 	}
 	
+	/**
+	 * 
+	 * @param level
+	 */
 	public void setLevel(IElement[][] level) {
 		this.level = level;
 	}
@@ -93,7 +106,13 @@ public class Correspondance implements ImageObserver {
         }
 	}
 
-	@Override
+	 
+
+	/**
+	 * 
+	 * 
+	 * @override
+	 */
 	public boolean imageUpdate(java.awt.Image img, int infoflags, int x, int y, int width, int height) {
 		// TODO Auto-generated method stub
 		return false;

@@ -1,7 +1,15 @@
 package model;
 
+/**
+ * 
+ * @author piers
+ *
+ */
 public class Element implements IElement{
 
+	/**
+	 * 
+	 */
     protected char sprite;
 
     /**

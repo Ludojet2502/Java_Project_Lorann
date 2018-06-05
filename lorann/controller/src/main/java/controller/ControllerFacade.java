@@ -8,7 +8,6 @@ import model.Example;
 import model.IElement;
 import model.IModel;
 import view.IView;
-import view.ViewFacade;
 
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>
@@ -24,9 +23,10 @@ public class ControllerFacade implements IController {
     /** The model. */
     private final IModel model;
     
+    /** The level. */
     private IElement[][] level;
 
-	private ViewFacade viewFacade;
+	//private ViewFacade viewFacade;
     
     /**
      * Instantiates a new controller facade.
@@ -64,15 +64,15 @@ public class ControllerFacade implements IController {
         
         this.level = this.getModel().getLevel();
         
-        this.setViewFacade(new ViewFacade());
+        //this.setViewFacade(new ViewFacade());
        
         
     }
-
+    /*
     private void setViewFacade(ViewFacade viewFacade) {
     	this.viewFacade = viewFacade;
 		
-	}
+	}*/
 
 	/**
      * Gets the view.
@@ -92,7 +92,7 @@ public class ControllerFacade implements IController {
         return this.model;
     }
     
-    /**
+    /*
     public void setViewFacade(ViewFacade viewFacade) {
 		this.viewFacade = viewFacade;
 	}*/

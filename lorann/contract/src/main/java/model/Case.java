@@ -24,12 +24,22 @@ public class Case {
     private char    sprite;
 
     /**
-     * Instantiates a new example.
+     * Instantiates a new case.
      *
      * @param id
      *            the id
-     * @param string
-     *            the name
+     *
+     * @param id_map
+     * 			  the id of map
+     * 
+     *  @param X
+     *  			the X of the sprite 
+     *  
+     *  @param Y 
+     *  			the Y of the sprite 
+     *  
+     *  @param sprite 
+     *  			the sprite of the sprite
      */
     public Case(final int id, final int id_map, final int X, final int Y, final char sprite) {
         super();
@@ -50,16 +60,17 @@ public class Case {
     }
 
     /**
-     * Gets the name.
+     * Gets the id of the map.
      *
-     * @return the name
+     * @return the Id_map
      */
     public int getId_map() {
         return this.id_map;
     }
     /**
+     * Gets the X of the sprite 
      * 
-     * @return
+     * @return the X
      */
 
     public int getX() {
@@ -67,16 +78,18 @@ public class Case {
     }
     
     /**
+     * Gets the Y of the sprite 
      * 
-     * @return
+     * @return the Y
      */
     public int getY() {
         return this.Y;
     }
     
     /**
+     * Gets the Sprite of the sprite
      * 
-     * @return
+     * @return the sprite
      */
     public char getSprite() {
         return this.sprite;

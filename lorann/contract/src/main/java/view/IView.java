@@ -17,5 +17,12 @@ public interface IView {
      *            the message
      */
     void displayMessage(String message);
+    
+    /**
+     * Display Map.
+     * 
+     * @param level 
+     * 				the level
+     */
     void displayMap(IElement[][] level);
 }

@@ -8,14 +8,33 @@ import Motion.Lorann;
 import Motion.MotionElementFactory;
 import MotionLessElement.MotionlessElementFactory;
 
-
+/**
+ * 
+ * @author piers
+ *
+ */
 public class Level extends Observable  {
-	
+	/**
+	 * 
+	 */
 	private static IElement[][] level = new Element[20][12];
+	/**
+	 * 
+	 */
 	MotionlessElementFactory motionlessElementFactory = new MotionlessElementFactory();
+	/**
+	 * 
+	 */
 	MotionElementFactory motionElementFactory = new MotionElementFactory();
+	/**
+	 * 
+	 */
 	Lorann lorann;
 	
+	/**
+	 * 
+	 * @param ListCases
+	 */
 	public void CreateMap(List<Case> ListCases) {
 		for (Case cases : ListCases) {
 			if (cases.getSprite() == 'B'||
@@ -48,18 +67,38 @@ public class Level extends Observable  {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @return
+	 */
 	public IElement getElementInTheMap( int x, int y) {
 		return Level.level[x][y];
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public IElement[][] getLevel(){
 		return Level.level;
 	}
 	
+	/**
+	 * 
+	 * @param level
+	 */
 	public void setLevel(IElement[][] level) {
 		Level.level = level;
 	}
 	
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @return
+	 */
 	public static char getIElement( int x, int y) {
 		return Level.level[x][y].getSprite();
 	}

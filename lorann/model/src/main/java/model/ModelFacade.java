@@ -17,7 +17,9 @@ import model.*;
  */
 public final class ModelFacade implements IModel {
 
-	
+	/**
+	 * 
+	 */
 	Level Niveau;
     /**
      * Instantiates a new model facade.
@@ -63,19 +65,32 @@ public final class ModelFacade implements IModel {
 		return CaseDAO.getAllCaseByID(id);
 	}
 
+	/**
+	 * 
+	 */
 	public void CreateLevel(List<Case> cases) throws SQLException{
 		this.Niveau = new Level();
 		Niveau.CreateMap(cases);
 	}
-	
+	/**
+	 * 
+	 */
 	public IElement[][] getLevel(){
 		return Niveau.getLevel();
 	}
-	
+	/**
+	 * 
+	 * @param level
+	 */
 	public void setLevel(IElement[][] level) {
 		Niveau.setLevel(level);
 	}
-	
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @return
+	 */
 	public char getIElement( int x, int y) {
 		return Niveau.getIElement(x, y);
 	}

@@ -2,6 +2,11 @@ package model;
 
 import model.IDoorOpened;
 
+/**
+ * 
+ * @author piers
+ *
+ */
 public class DoorOpened extends Door implements IDoorOpened{
 	private static final char SPRITE = ' ';
 	

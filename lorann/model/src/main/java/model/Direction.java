@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * 
+ * @author piers
+ *
+ */
 public enum Direction {
 	UP,
 	DOWN,

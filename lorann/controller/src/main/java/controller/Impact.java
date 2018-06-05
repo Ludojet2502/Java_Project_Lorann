@@ -27,15 +27,17 @@ import showboard.ISquare;
 
 public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3, IMonster4, ISpell, IHBone, IVBone, IOBone, IEnergyBall, IPurse, IDoorClosed, IDoorOpened{
 	
-	/**
-	 * 
-	 * @param lorann
-	 * @param monster
-	 */
+		/**
+		 * the method pour checking impact between Lorann and Monster1
+		 * 
+		 * @param lorann
+		 * @param monster
+		 */
 		public void checkImpact( ILorann lorann, IMonster1 monster1) {
 			lorann = null;
         }
 	 	/**
+	 	 * the method pour checking impact between Lorann and Monster2
 	 	 * 
 	 	 * @param lorann
 	 	 * @param monster
@@ -44,6 +46,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 			lorann = null;
         }
 	 	/**
+	 	 * the method pour checking impact between Lorann and Monster3
 	 	 * 
 	 	 * @param lorann
 	 	 * @param monster
@@ -52,6 +55,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 			lorann = null;
         }
 	 	/**
+	 	 * the method pour checking impact between Lorann and Monster4
 	 	 * 
 	 	 * @param lorann
 	 	 * @param monster
@@ -60,6 +64,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 			lorann = null;
         }
 	 	/**
+	 	 * the method pour checking impact between Lorann and Spell
 	 	 * 
 	 	 * @param lorann
 	 	 * @param spell
@@ -68,6 +73,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 			spell = null;
 	    }
 	    /**
+	     * the method pour checking impact between Lorann and hbone
 	     * 
 	     * @param lorann
 	     * @param hBone
@@ -76,6 +82,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    /**
+	     * the method pour checking impact between Lorann and vbone
 	     * 
 	     * @param lorann
 	     * @param vBone
@@ -84,6 +91,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    /**
+	     * the method pour checking impact between Lorann and obone
 	     * 
 	     * @param lorann
 	     * @param oBone
@@ -92,6 +100,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    /**
+	     * the method pour checking impact between Lorann and energyBall
 	     * 
 	     * @param lorann
 	     * @param energyBall
@@ -100,6 +109,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 			energyBall = null;
 	    }
 	    /**
+	     * the method pour checking impact between Lorann and pruse
 	     * 
 	     * @param lorann
 	     * @param purse
@@ -109,6 +119,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Lorann and doorclosed
 	     * 
 	     * @param lorann
 	     * @param doorClosed
@@ -118,6 +129,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Lorann and dooropened
 	     * 
 	     * @param lorann
 	     * @param doorOpened
@@ -127,6 +139,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and Monster1
 	     * 
 	     * @param spell
 	     * @param monster
@@ -137,6 +150,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and Monster2
 	     * 
 	     * @param spell
 	     * @param monster
@@ -147,6 +161,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and Monster3
 	     * 
 	     * @param spell
 	     * @param monster
@@ -157,6 +172,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and Monster4
 	     * 
 	     * @param spell
 	     * @param monster
@@ -167,6 +183,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between Spell and hbone
 	     * 
 	     * @param spell
 	     * @param hBone
@@ -176,6 +193,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and obone
 	     * 
 	     * @param spell
 	     * @param oBone
@@ -185,6 +203,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between Spell and vbone
 	     * 
 	     * @param spell
 	     * @param vBone
@@ -194,6 +213,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between Spell and energyBall
 	     * 
 	     * @param spell
 	     * @param energyBall
@@ -203,6 +223,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**.
+	     * the method pour checking impact between Spell and purse
 	     * 
 	     * @param spell
 	     * @param purse
@@ -212,6 +233,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between Spell and doorclosed
 	     * 
 	     * @param spell
 	     * @param doorClosed
@@ -221,6 +243,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between Spell and dooropened
 	     * 
 	     * @param spell
 	     * @param doorOpened
@@ -230,6 +253,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and hbone
 	     * 
 	     * @param monster
 	     * @param hBone
@@ -239,6 +263,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and hbone
 	     * 
 	     * @param monster
 	     * @param hBone
@@ -247,6 +272,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    /**
+	     * the method pour checking impact between monster3 and hbone
 	     * 
 	     * @param monster
 	     * @param hBone
@@ -255,6 +281,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    /**
+	     * the method pour checking impact between monster4 and hbone
 	     * 
 	     * @param monster
 	     * @param hBone
@@ -264,6 +291,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and vbone
 	     * 
 	     * @param monster
 	     * @param vBone
@@ -273,7 +301,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
-	     * 
+	     * the method pour checking impact between monster2 and vbone
 	     * @param monster
 	     * @param vBone
 	     */
@@ -282,6 +310,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     *  the method pour checking impact between monster3 and vbone
 	     * 
 	     * @param monster
 	     * @param vBone
@@ -291,6 +320,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     *  the method pour checking impact between monster4 and vbone
 	     * 
 	     * @param monster
 	     * @param vBone
@@ -300,6 +330,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     *  the method pour checking impact between monster1 and obone
 	     * 
 	     * @param monster
 	     * @param oBone
@@ -309,6 +340,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and obone
 	     * 
 	     * @param monster
 	     * @param oBone
@@ -317,7 +349,8 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 
 	    }
 	    
-	    /**.
+	    /**
+	     * the method pour checking impact between monster3 and obone
 	     * 
 	     * @param monster
 	     * @param oBone
@@ -327,6 +360,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster4 and obone
 	     * 
 	     * @param monster
 	     * @param oBone
@@ -336,6 +370,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and energyBall
 	     * 
 	     * @param monster
 	     * @param energyBall
@@ -345,6 +380,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and energyBall
 	     * 
 	     * @param monster
 	     * @param energyBall
@@ -354,6 +390,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster3 and energyBall
 	     * 
 	     * @param monster
 	     * @param energyBall
@@ -363,6 +400,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster4 and energyBall
 	     * 
 	     * @param monster
 	     * @param energyBall
@@ -372,6 +410,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and purse
 	     * 
 	     * @param monster
 	     * @param purse
@@ -381,6 +420,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and purse
 	     * 
 	     * @param monster
 	     * @param purse
@@ -390,6 +430,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster3 and purse
 	     * 
 	     * @param monster
 	     * @param purse
@@ -399,6 +440,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster4 and purse
 	     * 
 	     * @param monster
 	     * @param purse
@@ -408,6 +450,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and doorclosed
 	     * 
 	     * @param monster
 	     * @param doorClosed
@@ -417,6 +460,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and doorclosed
 	     * 
 	     * @param monster
 	     * @param doorClosed
@@ -426,6 +470,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster3 and doorclosed
 	     * 
 	     * @param monster
 	     * @param doorClosed
@@ -435,6 +480,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster4 and doorclosed
 	     * 
 	     * @param monster
 	     * @param doorClosed
@@ -444,6 +490,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 
 	    /**
+	     * the method pour checking impact between monster1 and dooropened
 	     * 
 	     * @param monster
 	     * @param doorOpened
@@ -453,6 +500,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster2 and dooropened
 	     * 
 	     * @param monster
 	     * @param doorOpened
@@ -462,6 +510,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster3 and dooropened
 	     * 
 	     * @param monster
 	     * @param doorOpened
@@ -471,6 +520,7 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    }
 	    
 	    /**
+	     * the method pour checking impact between monster4 and dooropened
 	     * 
 	     * @param monster
 	     * @param doorOpened
@@ -478,31 +528,50 @@ public class Impact implements IModel, ILorann, IMonster1, IMonster2, IMonster3,
 	    public void checkImpact( IMonster4 monster4, IDoorOpened doorOpened) {
 
 	    }
+	    
+	    /**
+	     * 
+	     */
 		@Override
 		public Example getExampleById(int id) throws SQLException {
 			// TODO Auto-generated method stub
 			return null;
 		}
+		/**
+	     * 
+	     */
 		@Override
 		public Example getExampleByName(String name) throws SQLException {
 			// TODO Auto-generated method stub
 			return null;
 		}
+		/**
+	     * 
+	     */
 		@Override
 		public List<Example> getAllExamples() throws SQLException {
 			// TODO Auto-generated method stub
 			return null;
 		}
+		/**
+	     * 
+	     */
 		@Override
 		public List<Case> getAllCasesByID(int id) throws SQLException {
 			// TODO Auto-generated method stub
 			return null;
 		}
+		/**
+	     * 
+	     */
 		@Override
 		public void CreateLevel(List<Case> cases) throws SQLException {
 			// TODO Auto-generated method stub
 			
 		}
+		/**
+	     * 
+	     */
 		@Override
 		public IElement[][] getLevel() {
 			// TODO Auto-generated method stub

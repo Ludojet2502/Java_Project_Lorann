@@ -9,13 +9,37 @@ import model.Location;
  */
 public class MotionlessElementFactory {
 
+	/**
+	 * 
+	 */
     private static Motionless Motionless = null;
+    /**
+     * 
+     */
 	private static EnergyBall ENERGYBALL = new EnergyBall();
+	/**
+	 * 
+	 */
     private static Purse PURSE = new Purse();
+    /**
+     * 
+     */
     private static HBone HBONE = new HBone();
+    /**
+     * 
+     */
     private static VBone VBONE = new VBone();
+    /**
+     * 
+     */
     private static OBone OBONE  = new OBone();
+    /**
+     * 
+     */
     private static DoorOpened DOOROPENED = new DoorOpened();
+    /**
+     * 
+     */
     private static DoorClosed DOORCLOSED = new DoorClosed();
 
     /**

@@ -1,14 +1,43 @@
 package model;
 
 import model.Location;
-
+/**
+ * 
+ * @author piers
+ *
+ */
 public class MotionElementFactory {
+	/**
+	 * 
+	 */
     private static Lorann LORANN = new Lorann();
+    /**
+     * 
+     */
     private static Spell SPELL = new Spell();
+    /**
+     * 
+     */
     private static Monster1 MONSTER1 = new Monster1();
+    /**
+     * 
+     */
     private static Monster2 MONSTER2 = new Monster2();
+    
+    /**
+     * 
+     */
     private static Monster3 MONSTER3 = new Monster3();
+    
+    /**
+     * 
+     */
     private static Monster4 MONSTER4 = new Monster4();
+    
+    
+    /**
+     * 
+     */
 	private static Motion Motion = null;
     
     /**

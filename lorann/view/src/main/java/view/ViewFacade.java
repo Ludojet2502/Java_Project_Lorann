@@ -25,12 +25,24 @@ import model.*;
  */
 public class ViewFacade implements IView {
 
+		/**
+		 * 
+		 */
         private BoardFrame boardFrame;
         
+        /**
+         * 
+         */
 		private IModel model;
 		
+		/**
+		 * 
+		 */
 		private Rectangle view;
 		
+		/**
+		 * 
+		 */
 		private IController Action;
 
 
@@ -47,6 +59,9 @@ public class ViewFacade implements IView {
     	this.boardFrame.setLevel(level);
     }*/
     
+    /**
+     * 
+     */
     public void displayMap(IElement[][] level) {
 		for (int i = 0; i <= 11; i++) {
 			for (int j = 0; j <= 19; j++) {
@@ -92,9 +107,7 @@ public class ViewFacade implements IView {
 	
   
     
-    /**
-     * 
-     */
+    
     /**
     public final void run() {
     	boardFrame.setDimension(new Dimension(20,12));
