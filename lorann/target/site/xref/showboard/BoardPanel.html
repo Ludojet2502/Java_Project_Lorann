@@ -96,7 +96,7 @@
 <a class="jxr_linenumber" name="L88" href="#L88">88</a>          <strong class="jxr_keyword">this</strong>.pawns = <strong class="jxr_keyword">new</strong> ArrayList&lt;&gt;();
 <a class="jxr_linenumber" name="L89" href="#L89">89</a>          <strong class="jxr_keyword">this</strong>.noImage = <strong class="jxr_keyword">new</strong> BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
 <a class="jxr_linenumber" name="L90" href="#L90">90</a>          <strong class="jxr_keyword">final</strong> Graphics2D graphics = <strong class="jxr_keyword">this</strong>.noImage.createGraphics();
-<a class="jxr_linenumber" name="L91" href="#L91">91</a>          graphics.setColor(Color.darkGray);
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>          graphics.setColor(Color.black);
 <a class="jxr_linenumber" name="L92" href="#L92">92</a>          graphics.fillRect(0, 0, 2, 2);
 <a class="jxr_linenumber" name="L93" href="#L93">93</a>      }
 <a class="jxr_linenumber" name="L94" href="#L94">94</a>  
@@ -142,7 +142,7 @@
 <a class="jxr_linenumber" name="L134" href="#L134">134</a> <em class="jxr_javadoccomment">     * @param y</em>
 <a class="jxr_linenumber" name="L135" href="#L135">135</a> <em class="jxr_javadoccomment">     *            the y</em>
 <a class="jxr_linenumber" name="L136" href="#L136">136</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="L137" href="#L137">137</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> addSquare(<strong class="jxr_keyword">final</strong> <a href="../showboard/ISquare.html">ISquare</a> square, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y) {
+<a class="jxr_linenumber" name="L137" href="#L137">137</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> addSquare(<strong class="jxr_keyword">final</strong> <a href="../showboard/ISquare.html">ISquare</a> square, <strong class="jxr_keyword">int</strong> x, <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> y) {
 <a class="jxr_linenumber" name="L138" href="#L138">138</a>         <strong class="jxr_keyword">this</strong>.squares[x][y] = square;
 <a class="jxr_linenumber" name="L139" href="#L139">139</a>     }
 <a class="jxr_linenumber" name="L140" href="#L140">140</a> 

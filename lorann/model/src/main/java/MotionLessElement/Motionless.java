@@ -1,15 +1,18 @@
 package MotionLessElement;
 
 import model.Element;
-import model.Location;
 
 /**
  * 
  * @author piers
  *
  */
-public abstract class Motionless extends Element {
-	Motionless(char sprite){
-		super(sprite);
+public abstract class Motionless {
+	private char sprite;
+	public Motionless(char sprite){
+		this.setSprite(sprite);
 	}
+    private void setSprite (char sprite) {
+        this.sprite = sprite;
+    }
 }

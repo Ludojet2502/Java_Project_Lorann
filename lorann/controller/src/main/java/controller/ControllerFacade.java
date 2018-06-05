@@ -8,6 +8,7 @@ import model.Example;
 import model.IElement;
 import model.IModel;
 import view.IView;
+import view.ViewFacade;
 
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>

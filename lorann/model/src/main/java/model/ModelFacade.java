@@ -64,7 +64,7 @@ public final class ModelFacade implements IModel {
 	}
 
 	public void CreateLevel(List<Case> cases) throws SQLException{
-		this.Niveau= new Level();
+		this.Niveau = new Level();
 		Niveau.CreateMap(cases);
 	}
 	

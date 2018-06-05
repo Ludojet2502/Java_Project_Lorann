@@ -2,7 +2,7 @@ package model;
 
 public class Element implements IElement{
 
-    private char sprite;
+    protected char sprite;
 
     /**
      * 
@@ -24,7 +24,7 @@ public class Element implements IElement{
 	 * @param sprite
 	 */
     private void setSprite (char sprite) {
-        this.sprite=sprite;
+        this.sprite = sprite;
     }
     
     
