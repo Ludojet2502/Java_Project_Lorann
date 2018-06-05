@@ -2,17 +2,21 @@ package model;
 
 import model.Element;
 
-public abstract class Motion extends Element{
+public abstract class Motion {
+	
+	private char sprite;
     
     /**
      * 
      * @param sprite
      */
 	public Motion(char sprite) {
-        super(sprite);
-        
-        
+        this.setSprite(sprite);
     }
+	
+	private void setSprite (char sprite) {
+		this.sprite= sprite;
+	}
 	
 	/**
 	 * 
